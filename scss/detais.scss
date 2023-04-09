@@ -1,0 +1,105 @@
+@import "import.scss";
+%main {
+  max-width: 250px;
+  height: 300px;
+}
+body {
+  background-image: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.datais-wrapper {
+  margin-top: 90px !important;
+  .discription h2 {
+    color: $color;
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    .rating {
+      display: flex;
+      justify-content: flex-end;
+      color: rgb(42, 243, 42);
+      width: 60%;
+      margin-top: 20px;
+      i {
+        margin-left: 2x;
+      }
+    }
+  }
+  .discription p {
+    width: 70%;
+    color: $color2;
+  }
+  .btn {
+    display: flex;
+  }
+  .discription .btn1 {
+    width: 30%;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+
+    background-color: $color;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+  }
+  .discription .btn1 {
+    width: 30%;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+
+    background-color: $color;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+  }
+  .discription .btn2 {
+    width: 30%;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    background: none;
+    border: solid 2px $color2 !important;
+    border-radius: 30px;
+    margin-left: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: $color2;
+  }
+  .image-film img {
+    width: 200px;
+    height: 280px;
+  }
+  .image-film {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.slide-warapper {
+  h2 {
+    color: $color !important;
+    margin-left: 20px;
+  }
+  img {
+    margin-top: 20px;
+    @extend %main;
+    ::hover {
+    }
+  }
+}
+footer {
+  color: $color2;
+}
+i {
+  color: #fff !important;
+}

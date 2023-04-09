@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <title>projet sass</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/profil.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="principal-wrapper">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" class="logo-img" />
+        </div>
+        <div class="notif-wrapper">
+          <div class="messanger2" id="messanger1">
+            <i class="fa fa-envelope fa-2x"></i>
+            <div class="box-wrapper1" id="box1">
+              <div class="perso-message">
+                <div class="image-profile">
+                  <img src="images/brahim.jpg" />
+                </div>
+                <div class="message">
+                  <h4>Brahim Noury</h4>
+                  <p>w9tah ni5dmou projet sass??</p>
+                  <div class="historique">
+                    <span>10 minutes ago</span>
+                    <span><a href="#" id="repondre">repondre</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="notification" id="notification">
+            <div class="icon-wrapper2">
+              <i class="fa fa-bell fa-2x"></i>
+            </div>
+            <div class="box-wrapper2" id="box2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="forme text-center">
+      <div class="container">
+        <div class="col-md-12 col-xs-12">
+          <div class="image-profile">
+            <div class="overley">
+              <img src="images/rayen.jpg" />
+              <label for="fileToUpload">Choisir photo</label>
+              <input
+                type="file"
+                class="file center-block"
+                name="fileToUpload"
+                id="fileToUpload"
+                style="margin-top: 20px"
+              />
+            </div>
+
+            <h1>Rayen Hamdi</h1>
+            <button class="btn-info center-block">Chnager La photo</button>
+          </div>
+          <form class="form-profile">
+            <div class="form-group">
+              <input type="text" class="form-profil" placeholder="Nom" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-profil" placeholder="Prenom" />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-profil"
+                placeholder="Votre nom d' utlisateur ou un email "
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-profil"
+                placeholder="Votre mot de passe"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-profil"
+                placeholder="Confirmer votre mot de passe"
+              />
+            </div>
+
+            <button type="submit" class="text-center">
+              Changer Votre mode passe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="messanger" id="messanger">
+      <div class="container">
+        <div class="chat_box" id="chat">
+          <div class="chat-btn">
+            <span>Ibrahim Boot</span>
+            <i class="fab fa-close fa" style="color: white"></i>
+          </div>
+          <div class="descussion">
+            <div class="perso1">
+              <div class="img-1">
+                <img src="images/brahim.jpg" />
+              </div>
+              <p>w9tah ni5dmou projet sass??</p>
+            </div>
+            <div class="perso2">
+              <p>sayib 3lina :p</p>
+              <div class="img-2">
+                <img src="images/rayen.jpg" />
+              </div>
+            </div>
+            <div class="perso1">
+              <div class="img-1">
+                <img src="images/brahim.jpg" />
+              </div>
+              <p>yizi mil blada mta3ik</p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="form">
+            <form class="form-wrapper">
+              <input type="text" class="form-chat" />
+              <button><i class="fas fa-thumbs-up fa-2x"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+  <script>
+    var element = document.getElementById("box1");
+    var element2 = document.getElementById("messanger1");
+    var element3 = document.getElementById("messanger");
+    var element4 = document.getElementById("repondre");
+    element2.addEventListener("click", () => {
+      element.classList.toggle("active");
+    });
+    element4.addEventListener("click", () => {
+      element3.style.display = "block";
+    });
+  </script>
+</html>

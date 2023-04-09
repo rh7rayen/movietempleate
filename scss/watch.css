@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  background-color: black !important;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+* {
+  font-family: "ROBOTO", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-top: 20px !important;
+}
+
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .menu li {
+  margin-top: 12px;
+}
+
+nav .menu li a {
+  font-weight: bold;
+  position: relative;
+  margin-left: 30px;
+  padding: 10px 24px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+nav .menu li a::before {
+  content: "";
+  position: absolute;
+  border-width: 0 2px;
+  border-color: #e50914;
+  border-style: solid;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+nav .menu li a:hover {
+  text-decoration: none;
+  color: #e50914;
+}
+
+nav .menu li a:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+nav .menu .search {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(245, 245, 245, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  padding: 0px 20px;
+  margin-left: 30px;
+}
+
+nav .menu .search .input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+nav .menu .search .input i {
+  color: #e50914;
+}
+
+.carousel {
+  margin-top: 80px;
+}
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+  left: -12px;
+}
+
+/* Next button  */
+#quote-carousel .carousel-control.right {
+  right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+}
+
+#quote-carousel img {
+  width: 250px;
+  height: 100px;
+}
+
+/* End carousel */
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote img {
+  margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: "Fontawesome";
+  float: left;
+  margin-right: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 85vh;
+  margin-top: 50px;
+  position: relative;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.image-wrapper img:hover {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.image-wrapper .cercle-play {
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+}
+
+.image-wrapper .cercle-play i {
+  padding: 15px;
+  background-color: #535252;
+  cursor: pointer;
+  color: #fff;
+  /* width: 30px; */
+  border-radius: 50%;
+  border: #fff 4px solid;
+}
+
+.image-wrapper .cercle-play i:hover {
+  background-color: #e50914;
+}
+
+.slide-warapper {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.slide-warapper .num {
+  color: white;
+  width: 50px;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+}
+
+.slide-warapper .num .text {
+  font-size: 40px;
+  position: absolute;
+}
+
+.slide-warapper .carou-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.slide-warapper .owl-carousel {
+  width: 60%;
+  position: none;
+  position: static !important;
+}
+
+.slide-warapper .owl-carousel .owl-prev span {
+  font-size: 60px !important;
+  color: #fff !important;
+  position: absolute;
+  left: 15% !important;
+  bottom: 50%;
+}
+
+.slide-warapper .owl-carousel .owl-next span {
+  font-size: 60px !important;
+  background: none !important;
+  color: #fff !important;
+  position: absolute;
+  right: 15% !important;
+  bottom: 50%;
+}
+
+.discription-wrapper {
+  margin-top: 50px !important;
+}
+
+.discription-wrapper p {
+  line-height: 1.8em;
+}
+
+.discription-wrapper .info-wrapper {
+  margin-top: 12px;
+}
+
+.discription-wrapper .titre-wrapper {
+  margin-top: 30px;
+}
+
+.discription-wrapper .titre-wrapper h4 {
+  margin-top: 15px;
+}
+
+.discription-wrapper .titre-wrapper i {
+  color: #b3b318;
+  margin-left: 5px;
+}
+
+.discription-wrapper h2 {
+  color: #e50914;
+}
+
+.discription-wrapper h4 {
+  color: #e50914;
+}
+
+.discription-wrapper h4 span {
+  color: #fff;
+}
+
+.discription-wrapper p {
+  color: #fff;
+}
+
+.discription-wrapper .image-film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.discription-wrapper .image-film img {
+  max-width: 70%;
+  height: 350 !important;
+}
+
+.carousel h2,
+.carousel li,
+.carousel p,
+.carousel span {
+  color: #fff;
+}
+
+.commentaire {
+  margin-top: 80px;
+}
+
+.commentaire .box {
+  margin: auto;
+  width: 500px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px 9px #ff61241f;
+          box-shadow: 0 0 20px 9px #ff61241f;
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+.commentaire .box .img {
+  float: left;
+  border-radius: 50%;
+}
+
+.commentaire .box span {
+  font-weight: bolder;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.commentaire .box .formcomm {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  background-color: none;
+  border-bottom: 1px solid #707070;
+  outline: none;
+}
+
+.commentaire .box button {
+  float: right;
+  background-color: none;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #e50914;
+  border-radius: 20px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.carousel {
+  margin-top: 80px;
+}
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=watch.css.map */

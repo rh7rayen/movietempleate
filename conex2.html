@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/conexion.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+  
+    
+      <!-- left -->
+      <div class="col-md-6">
+        <div class="logo">
+          <img src="images/logo.png" width="120px" height="80px" />
+       
+      </div>
+        <div class="left-panel">
+          <div class="button-dev text-center">
+            <button type="button" class="toggle-btn" onclick="login()">
+              CONNEXION
+            </button>
+            <button type="button" class="toggle-btn" onclick="register()">
+              INSCRIPTION
+            </button>
+          </div>
+
+          <div class="form-wrapper">
+            <form id="login" class="input-login">
+              <div class="form-group formulaire">
+                <div class="placeholder">
+                  <i class="fa fa-envelope fa-2x"></i>
+                </div>
+                <input
+                  type="email"
+                  class="forme"
+                  placeholder="Votre nom d' utlisateur ou un email "
+                />
+              </div>
+
+              <div class="form-group formulaire">
+                <div class="placeholder">
+                  <i class="fa fa-lock fa-2x"></i>
+                </div>
+                <input
+                  type="password"
+                  class="forme"
+                  placeholder="Votre mot de passe"
+                />
+              </div>
+
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <form id="register" class="input-login">
+              <div class="form-group">
+                <div class="placeholder">
+                  <i class="fa fa-user fa-2x"></i>
+                </div>
+                <input type="text" class="forme" placeholder="Nom " />
+              </div>
+              <div class="form-group">
+                <div class="placeholder">
+                  <i class="fa fa-user fa-2x"></i>
+                </div>
+                <input type="text" class="forme" placeholder="prenom " />
+              </div>
+              <div class="form-group">
+                <div class="placeholder">
+                  <i class="fa fa-envelope fa-2x"></i>
+                </div>
+                <input
+                  type="email"
+                  class="forme"
+                  placeholder="Votre nom d' utlisateur ou un email "
+                />
+              </div>
+              <div class="form-group">
+                <div class="placeholder">
+                  <i class="fa fa-lock fa-2x"></i>
+                </div>
+                <input
+                  type="password"
+                  class="forme"
+                  placeholder="Votre mot de passe"
+                />
+              </div>
+
+              <div class="form-group">
+                <div class="placeholder">
+                  <i class="fa fa-lock fa-2x"></i>
+                </div>
+                <input
+                  type="password"
+                  class="forme"
+                  placeholder="Confirmer votre modepasse"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="submit-btn"
+                style="margin-top: -10px"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 right">
+        <div class="image-bg">
+          <div class="right-panel">
+            <div class="imgs">
+              <img src="images/venom-2.png" name="venom">
+            </div>
+            <!-- image here.... -->
+          </div>
+        </div>
+      </div>
+      <!-- right -->
+    </section>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "500px";
+      }
+    </script>
+   <script>
+    class slider {
+      constructor() {
+        this.image = [
+          "images/venom-3.png",
+          "images/venom-2.png",
+          "images/venom2.jpg",
+         
+          
+        ];
+
+        this.counter = 0;
+
+        setInterval(() => {
+          this.playslider();
+        }, 800);
+      }
+      playslider() {
+        if (this.counter < this.image.length - 1) {
+          this.counter++;
+        } else {
+          this.counter = 0;
+        }
+
+        document.venom.src = this.image[this.counter];
+      }
+    }
+    onload = new slider();
+  </script>
+  </body>
+</html>

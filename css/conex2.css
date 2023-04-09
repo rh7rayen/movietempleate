@@ -1,0 +1,203 @@
+body {
+  background: #f2f2f2;
+}
+.left-panel {
+  background-color: #f2f2f2;
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: center;
+}
+.left-panel .button-dev {
+  margin-top: 10px;
+}
+.left-panel .button-dev button {
+  margin-left: 40px;
+  letter-spacing: 0.1em;
+
+  font-size: 20px;
+  background: none;
+  border: none;
+  outline: none;
+}
+.social-container {
+  margin-top: -50px;
+  padding-bottom: 10px;
+}
+.social-container a {
+  border: 1px solid #25a1ca;
+  color: #25a1ca;
+  text-decoration: none;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 5px;
+  height: 40px;
+  width: 40px;
+}
+.social-container a:hover {
+  background-color: #25a1ca;
+  color: white;
+}
+
+.left-panel .button-dev button:active {
+  border-bottom: 3px solid #25a1ca;
+  color: #25a1ca;
+}
+
+.input-login {
+  top: 60px;
+  position: absolute;
+  width: 450px;
+  transition: 0.5s;
+}
+.form-wrapper {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#login {
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+
+  left: 50px;
+  height: 100%;
+}
+.placeholder {
+  color: #c2c2c2;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  margin-top: -5px;
+}
+#login .formulaire {
+  padding: 30px;
+  width: 100%;
+  position: relative;
+}
+.checkbok {
+  display: flex;
+}
+.checkbok #exampleCheck1 {
+  background-color: yellow;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #707070;
+  padding: 3px;
+}
+.checkbok span {
+  margin-top: 6px;
+  margin-left: 3px;
+}
+#register {
+  left: 500px;
+}
+.input-login .form-group {
+  padding: 14px;
+}
+.input-login .form-group .forme {
+  width: 90%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #707070;
+  padding: 3px;
+  z-index: 100;
+  padding-left: 30px;
+}
+.input-login {
+}
+.image-bg {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+}
+.right {
+  height: 100vh;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.right-panel {
+  background-image: url("../img/bg2.svg");
+  background-size: cover;
+
+  background-position: center;
+  width: 72%;
+  height: 86%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.right-panel .imgs {
+  background-image: url("../img/connex.svg");
+  background-size: cover;
+
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  width: 98%;
+  height: 90vh;
+  height: 88%;
+  margin-left: 40px;
+}
+.checkbok {
+  margin-left: 40px;
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+.form-check .checkbo {
+  width: 25px;
+  height: 25px;
+}
+#login {
+  margin-top: 50px;
+}
+
+#login .submit-btn {
+  width: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 5px auto;
+  background: #25a1ca;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.submit-btn {
+  width: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  background: #25a1ca;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+}
+.submit-btn:hover {
+  color: #25a1ca;
+  background-color: #f2f2f2;
+  border: 2px solid #25a1ca;
+}
+#login .submit-btn:hover {
+  color: #25a1ca;
+  background-color: #f2f2f2;
+  border: 2px solid #25a1ca;
+}

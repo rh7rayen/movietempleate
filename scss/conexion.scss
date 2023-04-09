@@ -1,0 +1,124 @@
+@import "import.scss";
+$color: #e50914;
+$color2: #fff;
+body {
+  overflow: hidden;
+}
+.left-panel {
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: center;
+  .button-dev {
+    margin-top: 10px;
+
+    button {
+      margin-left: 40px;
+      letter-spacing: 0.1em;
+
+      font-size: 20px;
+      background: none;
+      border: none;
+      outline: none;
+      color: $color2;
+    }
+  }
+  .input-login {
+    top: 60px;
+    position: absolute;
+    width: 450px;
+    transition: 0.5s;
+  }
+  .form-wrapper {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  #login {
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+
+    left: 50px;
+    height: 100%;
+
+    .submit-btn {
+      width: 50%;
+      padding: 10px 20px;
+      cursor: pointer;
+      display: block;
+      margin: 2px auto;
+      background: $color;
+      border-radius: 30px;
+      border: 0;
+      outline: none;
+      border-radius: 30px;
+      color: #fff;
+      &::hover {
+        color: $color2;
+        background-color: $color;
+        border: 2px solid $color;
+      }
+    }
+  }
+  .placeholder {
+    color: $color;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    margin-top: -5px;
+  }
+  #login .formulaire {
+    padding: 30px;
+    width: 100%;
+    position: relative;
+  }
+
+  #register {
+    left: 500px;
+    .submit-btn {
+      width: 50%;
+      padding: 10px 20px;
+      cursor: pointer;
+      display: block;
+      margin: 30px auto;
+      background: $color;
+      border-radius: 30px;
+      border: 0;
+      outline: none;
+      border-radius: 30px;
+      color: #fff;
+      &::hover {
+        color: $color2;
+        background-color: $color;
+        border: 2px solid $color;
+      }
+    }
+  }
+  .input-login .form-group {
+    padding: 14px;
+    .forme {
+      width: 90%;
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid $color;
+      padding: 3px;
+      z-index: 100;
+      padding-left: 30px;
+    }
+  }
+}
+.right-panel {
+  height: 100vh;
+  display: flex;
+
+  img {
+    width: 120%;
+  }
+}

@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  background-color: black !important;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+* {
+  font-family: "ROBOTO", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-top: 20px !important;
+}
+
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .menu li {
+  margin-top: 12px;
+}
+
+nav .menu li a {
+  font-weight: bold;
+  position: relative;
+  margin-left: 30px;
+  padding: 10px 24px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+nav .menu li a::before {
+  content: "";
+  position: absolute;
+  border-width: 0 2px;
+  border-color: #e50914;
+  border-style: solid;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+nav .menu li a:hover {
+  text-decoration: none;
+  color: #e50914;
+}
+
+nav .menu li a:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+nav .menu .search {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(245, 245, 245, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  padding: 0px 20px;
+  margin-left: 30px;
+}
+
+nav .menu .search .input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+nav .menu .search .input i {
+  color: #e50914;
+}
+
+.carousel {
+  margin-top: 80px;
+}
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control {
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+  left: -12px;
+}
+
+/* Next button  */
+#quote-carousel .carousel-control.right {
+  right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+}
+
+#quote-carousel img {
+  width: 250px;
+  height: 100px;
+}
+
+/* End carousel */
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote img {
+  margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: "Fontawesome";
+  float: left;
+  margin-right: 10px;
+}
+
+.left-panel {
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: center;
+}
+
+.left-panel .button-dev {
+  margin-top: 10px;
+}
+
+.left-panel .button-dev button {
+  margin-left: 40px;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.left-panel .input-login {
+  top: 60px;
+  position: absolute;
+  width: 450px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.left-panel .form-wrapper {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-panel #login {
+  left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 50px;
+  height: 100%;
+}
+
+.left-panel #login .submit-btn {
+  width: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 2px auto;
+  background: #e50914;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.left-panel #login .submit-btn::hover {
+  color: #fff;
+  background-color: #e50914;
+  border: 2px solid #e50914;
+}
+
+.left-panel .placeholder {
+  color: #e50914;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  margin-top: -5px;
+}
+
+.left-panel #login .formulaire {
+  padding: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.left-panel #register {
+  left: 500px;
+}
+
+.left-panel #register .submit-btn {
+  width: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  background: #e50914;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.left-panel #register .submit-btn::hover {
+  color: #fff;
+  background-color: #e50914;
+  border: 2px solid #e50914;
+}
+
+.left-panel .input-login .form-group {
+  padding: 14px;
+}
+
+.left-panel .input-login .form-group .forme {
+  width: 90%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #e50914;
+  padding: 3px;
+  z-index: 100;
+  padding-left: 30px;
+}
+
+.right-panel {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-panel img {
+  width: 120%;
+}
+/*# sourceMappingURL=conexion.css.map */
